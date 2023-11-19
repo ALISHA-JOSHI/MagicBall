@@ -17,8 +17,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.generateRandomNumber()
-        
     }
 
     //MARK: Helper Methods
@@ -26,6 +24,7 @@ class ViewController: UIViewController {
         let randomNumber = Int.random(in: 0...4)
         return randomNumber
     }
+    
     //MARK: Action Handlers
     @IBAction func askButtonPressed(_ sender: Any) {
         imageView.image = UIImage(named: ballImageArray[self.generateRandomNumber()])
